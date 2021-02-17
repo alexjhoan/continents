@@ -1,0 +1,58 @@
+@import "fonts.css";
+
+:root{
+  --primary: #191920;
+  --secondary: #033545;
+  --text: #12446e;
+  --text-secondary: #425762;
+  --text-hover: #191920;
+  --btn: #a3a3a3;
+  --btn-hover: #a3a3a3;
+  font-size: 16px;
+}
+
+p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
+  font-family: Roboto;
+  color: var(--text);
+}
+
+a,p,div,input,button,textarea{
+  font-family: Roboto;
+  color: var(--text-secondary);
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  position: relative;
+  padding: 8vh 0;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 0;
+  padding: 10px 100px;
+  color: #fff;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+  background-color: var(--btn-hover)!important;
+  border-color: var(--btn-hover)!important;
+  box-shadow: none!important;
+}
+/*----------------------------Web-------------------------------*/
+
+/*----------------------------Queries-------------------------------*/
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {}
