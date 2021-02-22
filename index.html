@@ -14,22 +14,73 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <p class="h1">
-            Header
-          </p>
+    <div class="bgheader">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 innerBgheader">
+            <img src="assets/icons/continents-color.svg" alt="" class="logoHeader" />
+          </div>
         </div>
       </div>
     </div>
-  </header>
-  <section>
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>Landing title</h1>
-          <p>NOTA: git init no iniciado</p>
+          <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Respaldo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="whatsappBtn">
+      <a
+        href="https://api.whatsapp.com/send?phone=59897259343&text=Hola!%20Me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Torre%20Firenze." target="_blank" onclick="gtag('event', 'click', {
+            'event_category': 'Contactar por whatsapp',
+            'event_label': 'Contactar por whatsapp',
+            'value': 1
+          });">
+        <button>
+          <img src="assets/icons/whatsapp.png" alt="wpp" />
+        </button>
+      </a>
+    </div>
+  </header>
+  <section id="banner">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 containerGrid">
+          <div class="innerGrid left">
+            <img src="assets/icons/logo-continents.svg" alt="" class="d-none d-md-block" />
+          </div>
+          <div class="innerGrid right">
+            <div class="containerText">
+              <div class="dividerBanner"></div>
+              <div class="bannerText">
+                <p class="display-5 text-white fw-bold mb-4">Desarrollamos proyectos ganadores</p>
+                <p class="h3 text-white fw-light">Diseño destacado, alta calidad constructiva, excelente rentabilidad.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

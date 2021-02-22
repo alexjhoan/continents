@@ -1,4 +1,11 @@
 @font-face {
+  font-family: Ramabhadra;
+  src: url(../lib/fonts/Ramabhadra/Ramabhadra-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
   font-family: Roboto;
   src: url(../lib/fonts/roboto/Roboto-Thin.ttf) format('truetype');
   font-style: normal;
