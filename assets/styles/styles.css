@@ -21,6 +21,10 @@ p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6, a,p,div,input,button,textarea{
   color: var(--text);
 }
 
+.ff-roboto{
+  font-family: Roboto!important;
+}
+
 img {
   max-width: 100%;
 }
@@ -167,9 +171,9 @@ section {
     top: -50px;
   }
 
-/*----------------------------Ours-------------------------------*/
+/*------------------------------us---------------------------------*/
 
-  #count .item {
+  #us .item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -177,7 +181,7 @@ section {
     position: relative;
   }
 
-  #count .item:before, #count .item:after {
+  #us .item:before, #us .item:after {
     content: "";
     height: 1px;
     width: 50%;
@@ -185,29 +189,173 @@ section {
     margin: 20px 0;
   }
 
-/*----------------------------us-------------------------------*/
+/*------------------------------us2--------------------------------*/
 
-  section#us{
+  section#us2{
     background-image: linear-gradient(90deg, #0A2036c0 0%, #0A2036c0 100%), url('../images/us.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-  #us .flags {
+  #us2 .flags {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 50px 0 0;
   }
 
-  #us .flags img {
+  #us2 .flags img {
     width: 46px;
     height: auto;
     margin: 0 15px;
   }
 
-/*----------------------------btnWhatsapp-------------------------------*/
+/*------------------------------us3--------------------------------*/
+
+  section#us3 {
+    overflow: hidden;
+  }
+
+  section#us3 img.logoSections {
+    position: absolute;
+    top: 3vh;
+    right: -75px;
+  }
+
+  section#us3 .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  section#us3 .left .h2{
+    text-align: right;
+    margin-bottom: 50px;
+    font-weight: 500;
+  }
+
+  section#us3 .divider {
+    width: 40%;
+    height: 2px;
+    background: #593C1B;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px 0;
+  }
+
+/*------------------------------us4--------------------------------*/
+
+  section#us4{
+    padding: 16vh 0;
+  }
+
+  section#us4 .left .h2{
+    text-align: right;
+    margin-bottom: 50px;
+    font-weight: 500;
+  }
+
+  section#us4 img.logoSections {
+    position: absolute;
+    left: 35%;
+    top: 75%;
+  }
+
+  section#us4 .left .containerImgApto{
+    position: absolute;
+    left: 0;
+    width: 38%;
+  }
+
+  section#us4 .left .containerImgApto img{
+    width: 100%;
+  }
+
+  section#us4 .right{
+    position: relative;
+    z-index: 1;
+  }
+
+  section#us4 .firstDivider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background: #F8B600;
+    margin: 8vh 0;
+  }
+
+  section#us4 .secondDivider {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 2px;
+    background: #50BAA3;
+    margin: 8vh 0;
+  }
+
+/*------------------------------us5--------------------------------*/
+
+  section#us5 .divider {
+    width: 40%;
+    height: 2px;
+    background: #D25941;
+    margin: 30px 0;
+    position: absolute;
+    top: 1vh;
+    left: 0;
+  }
+
+  section#us5 .left .h2{
+    text-align: right;
+    margin-bottom: 50px;
+    font-weight: 500;
+  }
+
+  #us5 .containerGrid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin: 40px 0;
+  }
+
+  #us5 .containerGrid .item {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+
+  #us5 .containerGrid .itemOceania {
+    background: #50BAA3;
+    margin-left: 0;
+  }
+  #us5 .containerGrid .itemEuropa {
+    background: #8D9618;
+  }
+  #us5 .containerGrid .itemAfrica {
+    background: #593C1B;
+  }
+  #us5 .containerGrid .itemAmerica {
+    background: #D25941;
+  }
+  #us5 .containerGrid .itemAsia {
+    background: #F8B600;
+    margin-right: 0;
+  }
+
+  #us5 .containerGrid .item img {
+    width: auto;
+    height: 100%;
+    max-height: 160px;
+  }
+
+/*--------------------------btnWhatsapp----------------------------*/
 
   header div#whatsappBtn {
     position: fixed;
@@ -303,18 +451,50 @@ section {
     }
   }
 
-/*----------------------------Queries-------------------------------*/
+/*----------------------------Queries------------------------------*/
 
-  @media (max-width: 1399.98px) {}
+  @media (max-width: 1399.98px) {
+    section#us4 .left .containerImgApto{
+      width: 35%;
+    }
+    section#us4 img.logoSections {
+      position: absolute;
+      left: 30%;
+      top: 65%;
+    }
+    section#us4 img.logoSections {
+      position: absolute;
+      left: 30%;
+      top: 65%;
+    }
+  }
 
-  @media (max-width: 1199.98px) {}
+  @media (max-width: 1199.98px) {
+    section#us4 .left .containerImgApto{
+      width: 42%;
+    }
+    section#us4 img.logoSections {
+      position: absolute;
+      left: 37%;
+      top: 60%;
+    }
+  }
 
   @media (max-width: 991.98px) {
     header .navbar a.nav-link {
       margin-left: 10px;
     }
-    #count .item:before {
+    #us .item:before {
       content: none;
+    }
+    section#us4 img.logoSections {
+      position: absolute;
+      left: 35%;
+      top: 50%;
+    }
+    #us5 .containerGrid {
+      display: block;
+      width: 100%;
     }
   }
 
@@ -368,6 +548,40 @@ section {
     }
     #banner .dividerBanner {
       top: -30px;
+    }
+    section#us3 .divider {
+      background: #50BAA3;
+      width: 60%;
+    }
+    section#us3 .left{
+      align-items: center;
+    }
+    section#us3 .left .h2{
+      text-align: center;
+    }
+    section#us3 .left{
+      margin-bottom: 30px;
+    }
+    section#us4{
+      padding: 8vh 0 2vh;
+    }
+    section#us4 .left .h2{
+      text-align: center;
+    }
+    section#us4 .left .containerImgApto{
+      position: relative;
+      left: 0;
+      width: 100%;
+      margin-bottom: 30px;
+    },
+    section#us5 {
+      padding: 10vh 0 8vh;
+    }
+    section#us5 .divider {
+      width: 60%;
+    }
+    section#us5 .left .h2{
+      text-align: center;
     }
   }
 
