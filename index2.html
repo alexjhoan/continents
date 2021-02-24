@@ -82,34 +82,35 @@
 }
 #contact {
   background-color: #373948;
+  position: relative;
 }
 #contact .firstDivider {
-    position: absolute;
-    top: 109px;
-    left: 0;
-    width: 40%;
-    height: 2px;
-    background: #F8B600;
+  position: absolute;
+  top: 109px;
+  left: 0;
+  width: 40%;
+  height: 2px;
+  background: #F8B600;
 }
 #contact .secondDivider {
-    position: absolute;
-    top: 240px;
-    right: 0;
-    width: 40%;
-    height: 2px;
-    background: #D25941;
-    margin: 8vh 0;
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  width: 40%;
+  height: 2px;
+  background: #D25941;
+  margin: 8vh 0;
 }
 #contact h2 {
-    margin-top: 172px;
-    margin-bottom: 36px;
-    color: #fff;
+  margin-top: 30%;
+  margin-bottom: 36px;
+  margin-left: 30px;
+  color: #fff;
 }
 #contact h5 {
   color: white;
   margin-top: 28px;
   margin-bottom: 28px;
-  margin-left: 30px;
 }
 #contact form input {
   margin-bottom: 10px;
@@ -126,73 +127,130 @@
   padding: 10px 0;
 }
 #contact img.logoHeader {
-    margin-top: 286px;
-    margin-left: 30px;
+  margin-top: 286px;
 }
-img.facebook {
-    margin-left: 30px;
+#contact .red{
+  padding-left: 50px;
 }
 img.instagram {
-    margin-left: 27px;
+  margin-left: 27px;
 }
 form#contactForm {
-    margin: 0 30px;
+  margin: 0 30px;
 }
-@media (max-width: 767.98px) {
+
+@media (max-width: 991.98px) {
 #backups h2 {
-    margin-top: 42px;
-    margin-bottom: 42px;
-    font-size: 16px;
-    margin-left: 24px;
-    text-align: center;
-    margin-right: 13px;
+  margin-top: 42px;
+  margin-bottom: 42px;
+  font-size: 16px;
+  margin-left: 24px;
+  text-align: center;
+  margin-right: 13px;
 }
 #backups .backupsgrid p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 #backups .backupsgrid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: center;
-    grid-row-gap: 15px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  grid-row-gap: 15px;
 }
 #backups .backupsgrid .item3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 #backups .backupsgrid .item4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 #backups .backupsgrid .item5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 #backups .backupsgrid .item6 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 #backups .backupsgrid .item7 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
 .backupsgrid p {
-    font-size: 0.6rem;
-    margin-bottom: 0;
-    margin-top: 16px;
+  margin-bottom: 0;
+  margin-top: 16px;
 }
 .backupsgrid img {
-    width: 80%;
+  width: 80%;
+}
+#contact .firstDivider {
+  width: 60%;
+}
+#contact .secondDivider {
+  width: 60%;
+  bottom: 35%;
+}
+#contact .firstDivider {
+    width: 60%;
+    top: 86px;
+}
+#contact h2 {
+    margin-top: 120px;
+}
+ @media (max-width: 575.98px) {
+#backups .backupsgrid {
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: center;
+  grid-row-gap: 15px;
+}
+#backups .backupsgrid .item2{
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:2;
+  grid-row-end:3;
+}
+#backups .backupsgrid .item3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#backups .backupsgrid .item4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#backups .backupsgrid .item5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+#backups .backupsgrid .item6 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+#backups .backupsgrid .item7 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
 }
 }
   </style>
@@ -430,11 +488,11 @@ form#contactForm {
     </div>
   </section>
   <section id="contact">
-    <div class="firstDivider d-none d-md-block"></div>
-    <div class="secondDivider d-none d-md-block"></div>
+    <div class="firstDivider"></div>
+    <div class="secondDivider"></div>
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <h2>Contactanos</h2>
           <form id="contactForm">
             <div class="form-floating">
@@ -455,17 +513,18 @@ form#contactForm {
             </div>
             <button class="btn btn-primary mt-3" type="submit" onclick="submited()">Enviar</button>
           </form>
-      </div>
-      <div class="col-6 redes">
-          <img src="assets/icons/continents-color.svg" alt="" class="logoHeader" />
-          <h5>Oficinas para trato personalizado en Argentina, Uruguay y Paraguay</h5>
-          <div class="shared">
-            <a href="#" target="_blank"><img src="assets/icons/facebook.svg" class="facebook"></a>
-            <a href="#" target="_blank"><img src="assets/icons/instagram.svg" class="instagram"></a>
-          </div>
         </div>
-    </div>
+        <div class="col-12 col-lg-6 red">
+            <img src="assets/icons/continents-color.svg" alt="" class="logoHeader" />
+            <h5>Oficinas para trato personalizado en Argentina, Uruguay y Paraguay</h5>
+            <div class="shared">
+              <a href="#" target="_blank"><img src="assets/icons/facebook.svg" class="facebook"></a>
+              <a href="#" target="_blank"><img src="assets/icons/instagram.svg" class="instagram"></a>
+            </div>
 
+        </div>
+      </div>
+    </div>
   </section>
 
 <script type="text/javascript" src="assets/lib/jquery.min.js"></script>
