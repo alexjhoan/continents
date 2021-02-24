@@ -15,115 +15,129 @@
   <title>Landing title</title>
 
   <style>
-#us8 .band {
+#backups .band {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 50px 0 0;
   }
-#us8 .band img {
+#backups .band img {
   width: 46px;
   height: auto;
   margin: 0 15px;
   }
-#us8 h2 {
-  margin-top: 15px;
+#backups h2 {
+  margin-top: 35px;
+  margin-bottom: 94px;
+  margin-left: 120px;
+  margin-right: 120px;
   text-align: center;
   }
-#us8 .us8grid{
+#backups .backupsgrid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
+}
+#backups .backupsgrid .item1{
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
-#us8 .us8grid .item1{
-  grid-column-start:1;
-  grid-column-end:2;
-  grid-row-start:1;
-  grid-row-end:2;
-}
-#us8 .us8grid .item2{
+#backups .backupsgrid .item2{
   grid-column-start:2;
   grid-column-end:3;
   grid-row-start:1;
   grid-row-end:2;
 }
-#us8 .us8grid .item3{
+#backups .backupsgrid .item3{
   grid-column-start:3;
   grid-column-end:4;
   grid-row-start:1;
   grid-row-end:2;
 }
-#us8 .us8grid .item4{
+#backups .backupsgrid .item4{
   grid-column-start:4;
   grid-column-end:5;
   grid-row-start:1;
   grid-row-end:2;
 }
-#us8 .us8grid .item5{
+#backups .backupsgrid .item5{
   grid-column-start:1;
   grid-column-end:2;
   grid-row-start:2;
   grid-row-end:3;
 }
-#us8 .us8grid .item6{
+#backups .backupsgrid .item6{
   grid-column-start:2;
   grid-column-end:3;
   grid-row-start:2;
   grid-row-end:3;
 }
-#us8 .us8grid .item7{
+#backups .backupsgrid .item7{
   grid-column-start:3;
   grid-column-end:4;
   grid-row-start:2;
   grid-row-end:3;
 }
-#us8 .us8grid .item8{
-  grid-column-start:4;
-  grid-column-end:5;
-  grid-row-start:2;
-  grid-row-end:3;
+@media (max-width: 767.98px) {
+#backups h2 {
+    margin-top: 42px;
+    margin-bottom: 42px;
+    font-size: 16px;
+    margin-left: 24px;
+    text-align: center;
+    margin-right: 13px;
 }
-#us8 .us8grid .item9{
-  grid-column-start:1;
-  grid-column-end:2;
-  grid-row-start:3;
-  grid-row-end:4;
+#backups .backupsgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
 }
-#us8 .us8grid .item10{
-  grid-column-start:2;
-  grid-column-end:3;
-  grid-row-start:3;
-  grid-row-end:4;
+#backups .backupsgrid .item3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-#us8 .us8grid .item11{
-  grid-column-start:3;
-  grid-column-end:4;
-  grid-row-start:3;
-  grid-row-end:4;
+#backups .backupsgrid .item4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-#us8 .us8grid .item12{
-  grid-column-start:1;
-  grid-column-end:2;
-  grid-row-start:4;
-  grid-row-end:5;
+#backups .backupsgrid .item5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
-#us8 .us8grid .item13{
-  grid-column-start:2;
-  grid-column-end:3;
-  grid-row-start:4;
-  grid-row-end:5;
+#backups .backupsgrid .item6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
-#us8 .us8grid .item14{
-  grid-column-start:3;
-  grid-column-end:4;
-  grid-row-start:4;
-  grid-row-end:5;
+#backups .backupsgrid .item7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
-
+.backupsgrid p {
+    font-size: 0.6rem;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+.backupsgrid img {
+    width: 80%;
+}
+}
   </style>
-
-
 
 </head>
 <body>
@@ -313,7 +327,7 @@
       </div>
     </div>
   </section>
-  <section id="us8">
+  <section id="backups">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -323,21 +337,35 @@
             <img src="assets/icons/argentina.svg" alt="">
           </div>
             <h2>Nos asociamos con los principales referentes del rubro en los países donde operamos</h2>
-         <div class="us8grid">
-            <div class="item1"><p>Desarrollo y construcción</p></div>
-            <div class="item2"><p>Proyectan</p></div>
-            <div class="item3"><p>Marketing y Tecnología</p></div>
-            <div class="item4"><p>Desarrollo y construcción</p></div>
-            <div class="item5"><img src="assets/icons/logos_ventus.jpg" alt="Ventus"></div>
-            <div class="item6"><img src="assets/icons/logos_cesio.jpg" alt="Cesio"></div>
-            <div class="item7"><img src="assets/icons/logos_infocasas.jpg" alt="Infocasas"></div>
-            <div class="item8"><img src="assets/icons/logos_met.jpg" alt="Met"></div>
-            <div class="item9"><p>Estudio de Ingenieros</p></div>
-            <div class="item10"><p>Construcción</p></div>
-            <div class="item11"><p>Proyectan</p></div>
-            <div class="item12"><img src="assets/icons/logos_gonzalo-salgueiro.jpg" alt="Gonzalo-Salgueiro"></div>
-            <div class="item13"><img src="assets/icons/logos_sadec.jpg" alt="Sadec"></div>
-            <div class="item14"><img src="assets/icons/logos_hub.jpg" alt="Hub"></div>
+         <div class="backupsgrid">
+            <div class="item1">
+              <p>Desarrollo y construcción</p>
+              <img src="assets/icons/logos_ventus.jpg" alt="Ventus">
+            </div>
+            <div class="item2">
+              <p>Proyectan</p>
+              <img src="assets/icons/logos_cesio.jpg" alt="Cesio">
+            </div>
+            <div class="item3">
+              <p>Marketing y Tecnología</p>
+              <img src="assets/icons/logos_infocasas.jpg" alt="Infocasas">
+            </div>
+            <div class="item4">
+              <p>Desarrollo y construcción</p>
+              <img src="assets/icons/logos_met.jpg" alt="Met">
+            </div>
+            <div class="item5">
+              <p>Estudio de Ingenieros</p>
+              <img src="assets/icons/logos_gonzalo-salgueiro.jpg" alt="Gonzalo-Salgueiro">
+            </div>
+            <div class="item6">
+              <p>Construcción</p>
+              <img src="assets/icons/logos_sadec.jpg" alt="Sadec">
+            </div>
+            <div class="item7">
+              <p>Proyectan</p>
+              <img src="assets/icons/logos_hub.jpg" alt="Hub">
+            </div>
          </div>
         </div>
       </div>
