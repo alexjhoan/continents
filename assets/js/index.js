@@ -33,10 +33,10 @@ $('.owl-carousel').owlCarousel({
   dots: true,
   responsive:{
     0:{
-        items:1
+      items:1
     },
     600:{
-        items:3
+      items:3
     },
   }
 })
