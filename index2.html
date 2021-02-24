@@ -35,7 +35,7 @@
   }
 #backups .backupsgrid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 25% 25% 25% 25%;
   text-align: center;
 }
 #backups .backupsgrid .item1{
@@ -43,10 +43,6 @@
   grid-column-end:2;
   grid-row-start:1;
   grid-row-end:2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 #backups .backupsgrid .item2{
   grid-column-start:2;
@@ -84,6 +80,64 @@
   grid-row-start:2;
   grid-row-end:3;
 }
+#contact {
+  background-color: #373948;
+}
+#contact .firstDivider {
+    position: absolute;
+    top: 109px;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background: #F8B600;
+}
+#contact .secondDivider {
+    position: absolute;
+    top: 240px;
+    right: 0;
+    width: 40%;
+    height: 2px;
+    background: #D25941;
+    margin: 8vh 0;
+}
+#contact h2 {
+    margin-top: 172px;
+    margin-bottom: 36px;
+    color: #fff;
+}
+#contact h5 {
+  color: white;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  margin-left: 30px;
+}
+#contact form input {
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  height: 46px;
+}
+#contact textarea {
+  border-radius: 0;
+  height: 100px;
+}
+#contact button.btn.btn-primary.mt-3 {
+  width: 157px;
+  padding: 10px 0;
+}
+#contact img.logoHeader {
+    margin-top: 286px;
+    margin-left: 30px;
+}
+img.facebook {
+    margin-left: 30px;
+}
+img.instagram {
+    margin-left: 27px;
+}
+form#contactForm {
+    margin: 0 30px;
+}
 @media (max-width: 767.98px) {
 #backups h2 {
     margin-top: 42px;
@@ -93,10 +147,14 @@
     text-align: center;
     margin-right: 13px;
 }
+#backups .backupsgrid p {
+    margin-bottom: 0;
+}
 #backups .backupsgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     text-align: center;
+    grid-row-gap: 15px;
 }
 #backups .backupsgrid .item3 {
     grid-column-start: 1;
@@ -371,6 +429,45 @@
       </div>
     </div>
   </section>
+  <section id="contact">
+    <div class="firstDivider d-none d-md-block"></div>
+    <div class="secondDivider d-none d-md-block"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h2>Contactanos</h2>
+          <form id="contactForm">
+            <div class="form-floating">
+              <input type="text" class="form-control" placeholder="Nombre" name="name" required>
+              <label for="name">Nombre*</label>
+            </div>
+            <div class="form-floating">
+              <input type="email" class="form-control" placeholder="Email" name="email" required>
+              <label for="email">Email*</label>
+            </div>
+            <div class="form-floating">
+              <input type="tel" class="form-control" placeholder="Telefono" name="phone" required>
+              <label for="name">Telefono*</label>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" name="consult" style="height: 110px" placeholder="Consulta" required></textarea>
+              <label for="consult">Consulta*</label>
+            </div>
+            <button class="btn btn-primary mt-3" type="submit" onclick="submited()">Enviar</button>
+          </form>
+      </div>
+      <div class="col-6 redes">
+          <img src="assets/icons/continents-color.svg" alt="" class="logoHeader" />
+          <h5>Oficinas para trato personalizado en Argentina, Uruguay y Paraguay</h5>
+          <div class="shared">
+            <a href="#" target="_blank"><img src="assets/icons/facebook.svg" class="facebook"></a>
+            <a href="#" target="_blank"><img src="assets/icons/instagram.svg" class="instagram"></a>
+          </div>
+        </div>
+    </div>
+
+  </section>
+
 <script type="text/javascript" src="assets/lib/jquery.min.js"></script>
 <script type="text/javascript" src="assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="assets/lib/wow.min.js"></script>

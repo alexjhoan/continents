@@ -37,9 +37,9 @@ section {
 .btn.btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
-  border-radius: 0;
+  border-radius: 29px;
   padding: 10px 100px;
-  color: #fff;
+  color: #373948;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
