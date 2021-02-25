@@ -41,6 +41,7 @@ section {
   padding: 10px 30px;
   color: var(--text);
   font-weight: 700;
+  min-width: 150px;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
@@ -480,6 +481,283 @@ section {
     z-index: 2;
   }
 
+/*----------------------------backups------------------------------*/
+
+  #backups .band {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0 0;
+    }
+  #backups .band img {
+    width: 46px;
+    height: auto;
+    margin: 0 15px;
+    }
+  #backups h2 {
+    margin-top: 35px;
+    margin-bottom: 94px;
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: center;
+    }
+  #backups .backupsgrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+  }
+
+/*----------------------------contact------------------------------*/
+
+  #contact {
+    background-color: #373948;
+    position: relative;
+  }
+  #contact .firstDivider {
+    position: absolute;
+    top: 109px;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background: #F8B600;
+  }
+  #contact .secondDivider {
+    position: absolute;
+    bottom: 52%;
+    right: 0;
+    width: 40%;
+    height: 2px;
+    background: #D25941;
+    margin: 8vh 0;
+  }
+  #contact h2 {
+    margin-top: 30%;
+    margin-bottom: 36px;
+    color: #fff;
+  }
+  #contact h5 {
+    color: white;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  #contact form input {
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 0;
+  }
+  #contact textarea {
+    border-radius: 0;
+    height: 100px;
+  }
+  #contact .red{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 15%;
+  }
+
+/*----------------------------Queries------------------------------*/
+
+  @media (max-width: 1399.98px) {
+    section#us4 .left .containerImgApto{
+      width: 35%;
+    }
+    section#us4 img.logoSections {
+      position: absolute;
+      left: 30%;
+      top: 65%;
+    }
+    section#us4 img.logoSections {
+      position: absolute;
+      left: 30%;
+      top: 65%;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    section#us4 .left .containerImgApto{
+      width: 42%;
+    }
+    section#us4 img.logoSections {
+      position: absolute;
+      left: 37%;
+      top: 60%;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    header .navbar a.nav-link {
+      margin-left: 10px;
+    }
+    #us .item:before {
+      content: none;
+    }
+    section#us4 img.logoSections {
+      position: absolute;
+      left: 35%;
+      top: 50%;
+    }
+    #us5 .containerGrid {
+      display: block;
+      width: 100%;
+    }
+    #projects .legendImg .imgLegend {
+      margin: 20px 0;
+    }
+    #projects .legendImg .textLegend p {
+      text-align: center;
+    }
+    #projects .btnProject {
+      text-align: center;
+      position: relative;
+      z-index: 0;
+      margin: 30px 0 50px;
+    }
+    #backups h2 {
+      margin-top: 42px;
+      margin-bottom: 42px;
+      font-size: 16px;
+      margin-left: 24px;
+      text-align: center;
+      margin-right: 13px;
+    }
+    #backups .backupsgrid p {
+      margin-bottom: 0;
+    }
+    #backups .backupsgrid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      text-align: center;
+      grid-row-gap: 15px;
+    }
+    #backups .backupsgrid p {
+      margin-bottom: 0;
+      margin-top: 16px;
+    }
+    #backups .backupsgrid img {
+      width: 80%;
+    }
+    #contact .firstDivider {
+      width: 60%;
+    }
+    #contact .secondDivider {
+      width: 60%;
+      bottom: 25%;
+    }
+    #contact .firstDivider {
+      width: 60%;
+      top: 86px;
+    }
+    #contact h2 {
+      margin-top: 120px;
+    }
+    #contact img.logoHeader {
+      margin-top: 10%;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    header .bgheader {
+      transform: translateY(0px);
+    }
+    header .innerBgheader img{
+      width: 150px;
+    }
+    header .innerBgheader, header .navbar {
+      height: 53px;
+    }
+    header .navbar-collapse{
+      background: #373948A3;
+      margin: 0;
+      width: 100%;
+      position: fixed;
+      top: 53px;
+      left: 0;
+      border-top: solid 3px var(--primary);
+    }
+    header .navbar-nav{
+      max-width: 540px;
+      padding-right: calc(var(--bs-gutter-x)/ 2);
+      padding-left: calc(var(--bs-gutter-x)/ 2);
+      margin: auto;
+    }
+    header .navbar a.nav-link {
+      margin-left: 0;
+    }
+    header .navbar .nav-item:not(:last-child) {
+      border-bottom: solid 1px #ffffff50;
+    }
+    #banner .containerGrid {
+      display: flex;
+      flex-direction: column;
+    }
+    #banner .containerGrid .left {
+      background: url('../images/header-left.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 50vh;
+    }
+    #banner .containerGrid .right {
+      padding: 100px 0 48px;
+    }
+    #banner .containerGrid .right div.bannerText {
+      width: 100%;
+      padding: 0 16px;
+    }
+    #banner .dividerBanner {
+      top: -30px;
+    }
+    section#us3 .divider {
+      background: #50BAA3;
+      width: 60%;
+    }
+    section#us3 .left{
+      align-items: center;
+    }
+    section#us3 .left .h2{
+      text-align: center;
+    }
+    section#us3 .left{
+      margin-bottom: 30px;
+    }
+    section#us4{
+      padding: 8vh 0 2vh;
+    }
+    section#us4 .left .h2{
+      text-align: center;
+    }
+    section#us4 .left .containerImgApto{
+      position: relative;
+      left: 0;
+      width: 100%;
+      margin-bottom: 30px;
+    },
+    section#us5 {
+      padding: 10vh 0 8vh;
+    }
+    section#us5 .divider {
+      width: 60%;
+    }
+    section#us5 .left .h2{
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    #projects .barProgress .legendBar span {
+      font-size: 11px;
+    }
+    #backups .backupsgrid {
+      display: grid;
+      grid-template-columns: 100%;
+      text-align: center;
+      grid-row-gap: 15px;
+    }
+    #contact img.logoHeader {
+      margin-top: 30%;
+    }
+  }
 
 /*--------------------------btnWhatsapp----------------------------*/
 
@@ -574,157 +852,5 @@ section {
     }
     100% {
       transform: translate(1px, -2px) rotate(-1deg);
-    }
-  }
-
-/*----------------------------Queries------------------------------*/
-
-  @media (max-width: 1399.98px) {
-    section#us4 .left .containerImgApto{
-      width: 35%;
-    }
-    section#us4 img.logoSections {
-      position: absolute;
-      left: 30%;
-      top: 65%;
-    }
-    section#us4 img.logoSections {
-      position: absolute;
-      left: 30%;
-      top: 65%;
-    }
-  }
-
-  @media (max-width: 1199.98px) {
-    section#us4 .left .containerImgApto{
-      width: 42%;
-    }
-    section#us4 img.logoSections {
-      position: absolute;
-      left: 37%;
-      top: 60%;
-    }
-  }
-
-  @media (max-width: 991.98px) {
-    header .navbar a.nav-link {
-      margin-left: 10px;
-    }
-    #us .item:before {
-      content: none;
-    }
-    section#us4 img.logoSections {
-      position: absolute;
-      left: 35%;
-      top: 50%;
-    }
-    #us5 .containerGrid {
-      display: block;
-      width: 100%;
-    }
-    #projects .legendImg .imgLegend {
-      margin: 20px 0;
-    }
-    #projects .legendImg .textLegend p {
-      text-align: center;
-    }
-    #projects .btnProject {
-      text-align: center;
-      position: relative;
-      z-index: 0;
-      margin: 30px 0 50px;
-    }
-  }
-
-  @media (max-width: 767.98px) {
-    header .bgheader {
-      transform: translateY(0px);
-    }
-    header .innerBgheader img{
-      width: 150px;
-    }
-    header .innerBgheader, header .navbar {
-      height: 53px;
-    }
-    header .navbar-collapse{
-      background: #373948A3;
-      margin: 0;
-      width: 100%;
-      position: fixed;
-      top: 53px;
-      left: 0;
-      border-top: solid 3px var(--primary);
-    }
-    header .navbar-nav{
-      max-width: 540px;
-      padding-right: calc(var(--bs-gutter-x)/ 2);
-      padding-left: calc(var(--bs-gutter-x)/ 2);
-      margin: auto;
-    }
-    header .navbar a.nav-link {
-      margin-left: 0;
-    }
-    header .navbar .nav-item:not(:last-child) {
-      border-bottom: solid 1px #ffffff50;
-    }
-    #banner .containerGrid {
-      display: flex;
-      flex-direction: column;
-    }
-    #banner .containerGrid .left {
-      background: url('../images/header-left.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 50vh;
-    }
-    #banner .containerGrid .right {
-      padding: 100px 0 48px;
-    }
-    #banner .containerGrid .right div.bannerText {
-      width: 100%;
-      padding: 0 16px;
-    }
-    #banner .dividerBanner {
-      top: -30px;
-    }
-    section#us3 .divider {
-      background: #50BAA3;
-      width: 60%;
-    }
-    section#us3 .left{
-      align-items: center;
-    }
-    section#us3 .left .h2{
-      text-align: center;
-    }
-    section#us3 .left{
-      margin-bottom: 30px;
-    }
-    section#us4{
-      padding: 8vh 0 2vh;
-    }
-    section#us4 .left .h2{
-      text-align: center;
-    }
-    section#us4 .left .containerImgApto{
-      position: relative;
-      left: 0;
-      width: 100%;
-      margin-bottom: 30px;
-    },
-    section#us5 {
-      padding: 10vh 0 8vh;
-    }
-    section#us5 .divider {
-      width: 60%;
-    }
-    section#us5 .left .h2{
-      text-align: center;
-    }
-  }
-
-  @media (max-width: 575.98px) {
-    #projects .barProgress .legendBar span {
-      font-size: 11px;
     }
   }
