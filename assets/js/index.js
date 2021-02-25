@@ -14,8 +14,27 @@ function bgNavBar() {
 
 // ----------------------------------Projects----------------------------------
 
+function autoProgress(dateInit, dateEnd, IdProgress, IdImpPercentage) {
+  let nowDate = new Date().getTime();
+  let initDate = new Date(dateInit).getTime();
+  let endDate = new Date(dateEnd).getTime();
+  let width = $(`#${IdProgress}`)
+  if ((nowDate > initDate) && (nowDate < endDate)) {
+    let progress = ((nowDate - initDate) / (endDate - initDate)) * 100
+    $(width).css('width', `${Math.ceil(progress)}%`);
+    $(`#${IdImpPercentage}`).html(`${Math.ceil(progress)}% construido`)
+  } else if(nowDate < initDate){
+    $(width).css('width', '1%');
+  } else if (nowDate > endDate) {
+    $(width).css('width', '100%');
+  }
+}
+$(document).ready(function(){
+  autoProgress('2020/12/01', '2022/03/01', 'progressBarMale', 'percentageMale')
+  autoProgress('2021/04/01', '2023/04/01', 'progressBarFirenze', 'percentageFirenze')
+})
 
-$(el).css('width', '20px');
+
 
 //---------------------------------Gallery-Advance----------------------------------
 

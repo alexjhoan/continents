@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <div id="whatsappBtn">
+    <div id="whatsappBtn" class="d-none">
       <a
         href="https://api.whatsapp.com/send?phone=59897259343&text=Hola!%20Me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Torre%20Firenze." target="_blank" onclick="gtag('event', 'click', {
             'event_category': 'Contactar por whatsapp',
@@ -220,10 +220,10 @@
           </div>
           <div class="barProgress">
             <div class="progress">
-              <div class="progress-bar progressBarMale" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" id='progressBarMale' role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div class="legendBar">
-              <span>10% construido</span>
+              <span id="percentageMale">Inicio de obra: Diciembre 2020</span>
               <span>Entrega: Marzo 2022</span>
             </div>
           </div>
@@ -254,10 +254,10 @@
           </div>
           <div class="barProgress">
             <div class="progress">
-              <div class="progress-bar progressBarFirenze" role="progressbar" style="width: 1%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" id='progressBarFirenze' role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div class="legendBar">
-              <span>Inicio de obra: Abril 2021</span>
+              <span id="percentageFirenze">Inicio de obra: Abril 2021</span>
               <span>Entrega: Abril 2023</span>
             </div>
           </div>
