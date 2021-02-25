@@ -12,31 +12,42 @@ function bgNavBar() {
   }
 }
 
+// ----------------------------------Projects----------------------------------
+
+
+$(el).css('width', '20px');
+
 //---------------------------------Gallery-Advance----------------------------------
 
- $(document).ready(function() {
-      $("#lightgallery").lightGallery();
-  });
-  $(document).ready(function () {
-    $('#lightgallery a:lt(5)').show();
-    const items =  10;
-    let shown =  5;
-    $('.more').click(function () {
-      console.log('click')
-        shown = $('#lightgallery a:visible').length+5;
-        if(shown < items) {
-          $('#lightgallery a:lt('+shown+')').fadeIn(1000);
-            console.log('if')
-            console.log(shown)
-
-        } else {
-          $('.more').fadeOut();
-          $('#lightgallery a:lt('+items+')').fadeIn(1000);
-            console.log('else')
-
-        }
-    });
-});
+if (screen.width > 768){
+  $("#lightgallery").lightGallery();
+  const items =  $('#lightgallery a').length;
+  let shown = screen.width < 992 ? 4 : 5
+  $('#lightgallery a:lt('+shown+')').show();
+  function seeMore() {
+    let showItems = $('#lightgallery a:visible').length+shown;
+    $('#lightgallery a:lt('+showItems+')').fadeIn(1000);
+    if(showItems >= items) {
+      $('.more').fadeOut(500);
+    }
+  }
+}  else {
+  $("#lightgallery").addClass("owl-carousel owl-theme")
+  $('#advance .owl-carousel').owlCarousel({
+    loop:false,
+    margin:15,
+    nav:false,
+    dots: true,
+    responsive:{
+      0:{
+        items:1
+      },
+      575:{
+        items:2
+      },
+    }
+  })
+}
 
 // ------------------------------controls-scroll----------------------------
 
@@ -44,7 +55,7 @@ $(window).on("scroll", function () {
   bgNavBar()
 });
 
-// ------------------------------controls-scroll----------------------------
+// --------------------------------Continents-------------------------------
 
 if (screen.width < 992) {
   $("#us5 .containerGrid").addClass("owl-carousel owl-theme")
@@ -52,7 +63,7 @@ if (screen.width < 992) {
   $("#us5 .containerGrid").removeClass("owl-carousel owl-theme")
 }
 
-$('.owl-carousel').owlCarousel({
+$('#us5 .owl-carousel').owlCarousel({
   loop:false,
   margin:0,
   nav:false,
@@ -61,30 +72,8 @@ $('.owl-carousel').owlCarousel({
     0:{
       items:1
     },
-    600:{
+    575:{
       items:3
     },
   }
 })
-
-// ------------------------------aniamtions graphic US3----------------------------
-
-  lottie.loadAnimation({
-  container: document.getElementById('graphic'), // Required
-  path: 'assets/json/data.json', // Required
-  renderer: 'svg', // Required
-  loop: true, // Optional
-  autoplay: true, // Optional
-  name: "Hello World", // Name for future reference. Optional.
-})
-
-// ------------------------------aniamtions graphic US3----------------------------
-const options = {
-  duration: 4,
-};
-let demo = new CountUp('cont20', 20, options);
-if (!demo.error) {
-  demo.start();
-} else {
-  console.error(demo.error);
-}
