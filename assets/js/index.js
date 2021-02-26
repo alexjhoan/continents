@@ -12,6 +12,32 @@ function bgNavBar() {
   }
 }
 
+//---------------------------------Gallery-Advance----------------------------------
+
+ $(document).ready(function() {
+      $("#lightgallery").lightGallery();
+  });
+  $(document).ready(function () {
+    $('#lightgallery a:lt(5)').show();
+    const items =  10;
+    let shown =  5;
+    $('.more').click(function () {
+      console.log('click')
+        shown = $('#lightgallery a:visible').length+5;
+        if(shown < items) {
+          $('#lightgallery a:lt('+shown+')').fadeIn(1000);
+            console.log('if')
+            console.log(shown)
+
+        } else {
+          $('.more').fadeOut();
+          $('#lightgallery a:lt('+items+')').fadeIn(1000);
+            console.log('else')
+
+        }
+    });
+});
+
 // ------------------------------controls-scroll----------------------------
 
 $(window).on("scroll", function () {
