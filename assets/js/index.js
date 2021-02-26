@@ -96,7 +96,14 @@ $('#us5 .owl-carousel').owlCarousel({
     },
   }
 })
-
+// --------------------------------Continents-------------------------------
+lottie.loadAnimation({
+  container: graphic, // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'assets/json/data.json' // the path to the animation json
+});
 // --------------------------------Parallax BANNER-------------------------------
 $(document).ready(function(){
 
