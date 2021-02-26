@@ -487,14 +487,20 @@ body {
 
 /*----------------------------Advance-------------------------------*/
 
-  div#lightgallery {
+  section#advance #lightgallery {
     display: grid;
-    grid-template-columns: 19.6% 19.6% 19.6% 19.6% 19.6%;
+    grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 0.5%;
     grid-row-gap: 2%;
+    padding-bottom: 2%;
   }
-  div#lightgallery a{
+  #advance #lightgallery a{
     display: none;
+  }
+
+  #advance .btnMore{
+    text-align: center;
+    margin-top: 30px;
   }
 
 /*----------------------------backups------------------------------*/
@@ -630,6 +636,9 @@ body {
       z-index: 0;
       margin: 30px 0 50px;
     }
+    section#advance #lightgallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
     #backups h2 {
       margin-top: 42px;
       margin-bottom: 42px;
@@ -757,6 +766,17 @@ body {
     }
     section#us5 .left .h2{
       text-align: center;
+    }
+    section#advance #lightgallery {
+      display: block;
+      width: 100%;
+      padding-bottom: 0;
+    }
+    #advance #lightgallery a{
+      display: block;
+    }
+    #advance .btnMore{
+      display: none;
     }
   }
 
