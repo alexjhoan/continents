@@ -141,7 +141,7 @@ body {
   #banner .containerGrid .left {
     background: linear-gradient(90deg, #d25941c0 0%, #d25941c0 100%), url('../images/header-left.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 45%;
     background-attachment: fixed;
   }
 
@@ -198,11 +198,10 @@ body {
 
 /*------------------------------us2--------------------------------*/
 
-  .us2{
-    background-image: linear-gradient(90deg, #0A2036c0 0%, #0A2036c0 100%), url('../images/us.jpg');
+  #us2{
+    background-image: linear-gradient(90deg, #0A2036c0 0%, #0A2036c0 100%);
     background-repeat: no-repeat;
     background-size: cover;
-   background-attachment: fixed;
   }
 
   #us2 .flags {
@@ -222,6 +221,7 @@ body {
 
   section#us3 {
     overflow: hidden;
+    padding: 16vh 0;
   }
 
   section#us3 img.logoSections {
@@ -306,6 +306,10 @@ body {
   }
 
 /*------------------------------us5--------------------------------*/
+
+  section#us5 {
+    padding: 16vh 0 8vh;
+  }
 
   section#us5 .divider {
     width: 40%;
@@ -488,12 +492,19 @@ body {
 
 /*----------------------------Advance-------------------------------*/
 
+  section#advance .left .h2{
+    text-align: right;
+    margin-bottom: 50px;
+    font-weight: 500;
+  }
+
   section#advance #lightgallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 0.5%;
     grid-row-gap: 2%;
     padding-bottom: 2%;
+    margin-top: 45px;
   }
   #advance #lightgallery a{
     display: none;
@@ -766,6 +777,9 @@ body {
       width: 60%;
     }
     section#us5 .left .h2{
+      text-align: center;
+    }
+    section#advance .left .h2{
       text-align: center;
     }
     section#advance #lightgallery {

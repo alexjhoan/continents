@@ -68,10 +68,25 @@ if (screen.width > 768){
   })
 }
 
+// --------------------------------Parallax BANNER-------------------------------
+
+function bannerParallax() {
+  let container = $("#banner .left")
+  let heightElem = container.height()
+  let scroll = $(window).scrollTop()
+  if (scroll >= 0 && scroll < heightElem) {
+    container.css({
+      "background-position": "0px " + -0.4 * scroll + "px"
+    })
+  }
+}
+
+
 // ------------------------------controls-scroll----------------------------
 
 $(window).on("scroll", function () {
   bgNavBar()
+  bannerParallax()
 });
 
 // --------------------------------Continents-------------------------------
@@ -96,28 +111,3 @@ $('#us5 .owl-carousel').owlCarousel({
     },
   }
 })
-
-// --------------------------------Parallax BANNER-------------------------------
-$(document).ready(function(){
-
-  $(window).scroll(function(){
-    var barra = $(window).scrollTop();
-    var posicion =  (barra * 0.10);
-
-    $('.left').css({
-      'background-position': '0 -' + posicion + 'px'
-    });
-  });
-});
-// --------------------------------Parallax US2-------------------------------
-$(document).ready(function(){
-
-  $(window).scroll(function(){
-    var barra = $(window).scrollTop();
-    var posicion =  (barra * 0.10);
-
-    $('.us2').css({
-      'background-position': '0 -' + posicion + 'px'
-    });
-  });
-});
