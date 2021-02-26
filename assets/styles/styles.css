@@ -251,6 +251,12 @@ body {
     right: 0;
     margin: 30px 0;
   }
+  p.h2.text-end.fw-regular.mb-5 {
+    margin-bottom: 0 !important;
+  }
+  div#graphic {
+    width: 70%;
+  }
 
 /*------------------------------us4--------------------------------*/
 
