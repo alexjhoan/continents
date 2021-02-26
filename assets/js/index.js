@@ -12,6 +12,11 @@ function bgNavBar() {
   }
 }
 
+// ----------------------------------Projects----------------------------------
+
+
+$(el).css('width', '20px');
+
 //---------------------------------Gallery-Advance----------------------------------
 
 if (screen.width > 768){
@@ -72,25 +77,3 @@ $('#us5 .owl-carousel').owlCarousel({
     },
   }
 })
-
-// ------------------------------aniamtions graphic US3----------------------------
-
-  lottie.loadAnimation({
-  container: document.getElementById('graphic'), // Required
-  path: 'assets/json/data.json', // Required
-  renderer: 'svg', // Required
-  loop: true, // Optional
-  autoplay: true, // Optional
-  name: "Hello World", // Name for future reference. Optional.
-})
-
-// ------------------------------aniamtions graphic US3----------------------------
-const options = {
-  duration: 4,
-};
-let demo = new CountUp('cont20', 20, options);
-if (!demo.error) {
-  demo.start();
-} else {
-  console.error(demo.error);
-}
