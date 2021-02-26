@@ -142,6 +142,7 @@ body {
     background: linear-gradient(90deg, #d25941c0 0%, #d25941c0 100%), url('../images/header-left.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
   }
 
   #banner .containerGrid .left img{

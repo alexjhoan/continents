@@ -96,3 +96,28 @@ $('#us5 .owl-carousel').owlCarousel({
     },
   }
 })
+
+// --------------------------------Parallax BANNER-------------------------------
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+    var barra = $(window).scrollTop();
+    var posicion =  (barra * 0.10);
+
+    $('.left').css({
+      'background-position': '0 -' + posicion + 'px'
+    });
+  });
+});
+// --------------------------------Parallax US2-------------------------------
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+    var barra = $(window).scrollTop();
+    var posicion =  (barra * 0.10);
+
+    $('#us2').css({
+      'background-position': '0 -' + posicion + 'px'
+    });
+  });
+});
