@@ -50,6 +50,10 @@ section {
   box-shadow: none!important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*----------------------------header-------------------------------*/
 
   header {
@@ -479,6 +483,18 @@ section {
   #projects .btnProject .btn{
     position: relative;
     z-index: 2;
+  }
+
+/*----------------------------Advance-------------------------------*/
+
+  div#lightgallery {
+    display: grid;
+    grid-template-columns: 19.6% 19.6% 19.6% 19.6% 19.6%;
+    grid-column-gap: 0.5%;
+    grid-row-gap: 2%;
+  }
+  div#lightgallery a{
+    display: none;
   }
 
 /*----------------------------backups------------------------------*/
