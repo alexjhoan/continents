@@ -5,7 +5,7 @@ new WOW({offset:200}).init()
 function bgNavBar() {
   let container = $("#banner").height();
   let scroll = $(window).scrollTop();
-  if (scroll > (container - 66)) {
+  if (scroll > 200 ) {
     $(".bgheader").addClass("bgShow")
   } else {
     $(".bgheader").removeClass("bgShow")
