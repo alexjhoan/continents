@@ -5,7 +5,7 @@ new WOW({offset:200}).init()
 function bgNavBar() {
   let container = $("#banner").height();
   let scroll = $(window).scrollTop();
-  if (scroll > (container - 66)) {
+  if (scroll > 200 ) {
     $(".bgheader").addClass("bgShow")
   } else {
     $(".bgheader").removeClass("bgShow")
@@ -62,7 +62,7 @@ if (screen.width > 768){
   })
 }
 
-// --------------------------------Parallax BANNER-------------------------------
+// --------------------------------Parallax Backgrouns-------------------------------
 
 function bannerParallax() {
   let container = $("#banner .left")
@@ -71,6 +71,20 @@ function bannerParallax() {
   if (scroll >= 0 && scroll < heightElem) {
     container.css({
       "background-position": "0px " + -0.4 * scroll + "px"
+    })
+  }
+}
+
+function usParallax() {
+  let container = $("#us2")
+  let heightTop = container.offset().top;
+  let heightElem = container.height()
+  let heightWindow = $(window).height();
+  let scroll = $(window).scrollTop()
+  let positionY = scroll - heightTop
+  if ((scroll > (heightTop - heightWindow)) && (scroll < (heightTop + ( heightElem *2 )))) {
+    container.css({
+      "background-position": "0px " + -0.4 * Math.floor(positionY) + "px"
     })
   }
 }
@@ -89,6 +103,7 @@ $(document).ready(function(){
 $(window).on("scroll", function () {
   bgNavBar()
   bannerParallax()
+  usParallax()
 });
 
 // --------------------------------Continents-------------------------------
