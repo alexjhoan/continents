@@ -78,7 +78,7 @@
           </div>
           <div class="innerGrid right">
             <div class="containerText">
-              <div class="dividerBanner wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s"></div>
+              <div class="dividerBanner wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="1s"></div>
               <div class="bannerText wow fadeInDown" data-wow-duration="2s" data-wow-duration="2s">
                 <p class="display-5 text-white fw-bold mb-4">Desarrollamos proyectos ganadores</p>
                 <p class="h3 text-white fw-light">Diseño destacado, alta calidad constructiva, excelente rentabilidad.</p>
@@ -388,7 +388,7 @@
       <div class="row">
         <div class="col-12 col-md-6 wow fadeInRight">
           <h2>Contactanos</h2>
-          <form id="contactForm">
+          <form id="contactForm validation">
             <div class="form-floating">
               <input type="text" class="form-control" placeholder="Nombre" name="name" required>
               <label for="name">Nombre*</label>
@@ -405,8 +405,25 @@
               <textarea class="form-control" name="consult" style="height: 110px" placeholder="Consulta" required></textarea>
               <label for="consult">Consulta*</label>
             </div>
-            <button class="btn btn-primary mt-3" type="submit" onclick="return false">Enviar</button>
+            <button class="btn btn-primary mt-3" type="submit" onclick="submited()">Enviar</button>
           </form>
+
+          <div id="formSending">
+            <p class="h3 strong">
+              Enviando
+              <span></span>
+              <span></span>
+              <span></span>
+            </p>
+          </div>
+          <div id="formSuccess" style="display: none;">
+            <p class="h3 strong">¡Consulta Enviada!</p>
+          </div>
+          <div id="formError" style="display: none;">
+            <p class="h3 strong">¡Error en el envio de su consulta.<br>Por favor intentar mas tarde!</p>
+          </div>
+
+
         </div>
         <div class="col-12 col-md-6 offset-lg-1 col-lg-5 red  wow fadeInLeft">
           <img src="assets/icons/continents-color.svg" alt="" class="logoHeader" />
