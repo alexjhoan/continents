@@ -153,7 +153,7 @@ function dataSubmited(data) {
     'Content-type': 'application/json; charset=UTF-8',
     },
   };
-  fetch("https://www.infocasas.com.uy/proyectos/torre-firenze?&formulario=1&json=1", requestOptions)
+  fetch("https://www.infocasas.com.uy?mid=formulario&func=ajax_save&json=1", requestOptions)
   .then((json) => {
     setTimeout(()=>{
       if (json.status === 200) {
@@ -177,27 +177,25 @@ function submited() {
   const form = document.querySelector('#contactForm')
   const data = JSON.stringify({
     nombre: form.name.value,
+    apellido: "",
     email: form.email.value,
     telefono: form.phone.value,
+    tel: form.phone.value,
+    source: 2,
+    utm_source: "web_continents",
     extra: form.consult.value,
+    IDpais: 1,
+    IDform: 447
   })
   event.preventDefault()
   if (!form.checkValidity()) {
     event.stopPropagation()
   }else{
-    // dataSubmited(data)
-    // setTimeout(()=>{
-    //   $(form).fadeOut();
-    //   $('#formSending').fadeIn();
-    // },300)
+    dataSubmited(data)
     setTimeout(()=>{
       $(form).fadeOut();
       $('#formSending').fadeIn();
-      setTimeout(()=>{
-        $('#formSending').fadeOut();
-        $('#formSuccess').fadeIn();
-      },1000)
-    },1000)
+    },300)
   }
   form.classList.add('was-validated')
 }
