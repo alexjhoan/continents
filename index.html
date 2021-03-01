@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/lib/owl-carousel/owl-carousel.min.css">
   <link rel="stylesheet" href="assets/lib/owl-carousel/owl-theme.default.min.css">
   <link rel="stylesheet" href="assets/lib/lightgallery/css/lightgallery.min.css" />
+  <link rel="stylesheet" href="assets/lib/countUp/jquery-ui.min.css" />
   <link rel="stylesheet" href="assets/styles/styles.css" />
   <title>Landing title</title>
 </head>
@@ -91,20 +92,20 @@
   <section id="us">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-6 col-lg-3 item wow fadeInUp">
-          <p class="display-4 fw-bold">3</p>
+        <div class="col-12 col-sm-6 col-lg-3 item wow fadeInUp" id="pruebawow">
+          <p class="display-4 fw-bold counterUp" data-count="3">0</p>
           <p class="h5 fw-bold">países</p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 item wow fadeInUp">
-          <p class="display-4 fw-bold" id="cont20">20</p>
+          <p class="display-4 fw-bold counterUp" data-count="20">0</p>
           <p class="h5 fw-bold">años de experiencia</p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 item wow fadeInDown">
-          <p class="display-4 fw-bold">5</p>
+          <p class="display-4 fw-bold counterUp" data-count="5">0</p>
           <p class="h5 fw-bold">líneas de edificios</p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 item wow fadeInDown">
-          <p class="display-4 fw-bold">+100</p>
+          <p class="display-4 fw-bold">+<span class="counterUp" data-count="100"></span></p>
           <p class="h5 fw-bold">miembros del equipo</p>
         </div>
       </div>
@@ -421,6 +422,8 @@
 <script type="text/javascript" src="assets/lib/lottie.min.js" ></script>
 <script type="text/javascript" src="assets/lib/lightgallery/js/lightgallery.min.js"></script>
 <script type="text/javascript" src="assets/lib/parallax/parallax.js"></script>
+<script type="text/javascript" src="assets/lib/countUp/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/lib/countUp/myCountUp.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>

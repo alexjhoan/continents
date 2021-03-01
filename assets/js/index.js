@@ -29,12 +29,6 @@ function autoProgress(dateInit, dateEnd, IdProgress, IdImpPercentage) {
     $(width).css('width', '100%');
   }
 }
-$(document).ready(function(){
-  autoProgress('2020/12/01', '2022/03/01', 'progressBarMale', 'percentageMale')
-  autoProgress('2021/04/01', '2023/04/01', 'progressBarFirenze', 'percentageFirenze')
-})
-
-
 
 //---------------------------------Gallery-Advance----------------------------------
 
@@ -80,6 +74,14 @@ function bannerParallax() {
     })
   }
 }
+
+
+// ------------------------------controls-inits----------------------------
+
+$(document).ready(function(){
+  autoProgress('2020/12/01', '2022/03/01', 'progressBarMale', 'percentageMale')
+  autoProgress('2021/04/01', '2023/04/01', 'progressBarFirenze', 'percentageFirenze')
+})
 
 
 // ------------------------------controls-scroll----------------------------
