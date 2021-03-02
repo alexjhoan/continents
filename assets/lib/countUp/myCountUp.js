@@ -7,7 +7,7 @@ function counterUp(container) {
         countNum: countTo
       },
       {
-        duration: 8000,
+        duration: 5000,
         easing:'easeOutExpo',
         step: function() {
           $this.text(Math.ceil(this.countNum));
@@ -29,7 +29,6 @@ $(window).on("scroll", function () {
     counterUp('#us')
   } else if (scroll > ((heightTop2 - heightWindow) * 1.15 ) && (scroll < (heightTop2 + heightWindow))) {
     counterUp('#projects')
-    console.log('arranque')
   }
 });
 

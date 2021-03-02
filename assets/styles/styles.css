@@ -207,9 +207,11 @@ body {
 /*------------------------------us2--------------------------------*/
 
   #us2{
-    background-image: linear-gradient(90deg, #0A2036c0 0%, #0A2036c0 100%);
+    background-image: linear-gradient(90deg, #0A2036c0 0%, #0A2036c0 100%), url('../images/us.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 380px;
+    background-attachment: fixed;
   }
 
   #us2 .flags {
