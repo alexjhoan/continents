@@ -623,20 +623,49 @@ p.h5.fw-bold.mb-5{
     align-items: flex-start;
     padding-top: 8%;
   }
-  #contact #formSending p.strong {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
 
-#contact #formSending p.strong span {
-  background: var(--text);
-  height: 6px;
-  width: 6px;
-  border-radius: 100%;
-  margin: 0 3px;
-  animation: sending 1s infinite;
-}
+  #contact p.strong {
+    color: #fff;
+  }
+
+  #contact #formSending p.strong {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  #contact #formSending p.strong span {
+    background: #fff;
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    margin: 0 3px;
+    animation: sending 1s infinite;
+  }
+
+  #contact #formSending p.strong span:first-child {
+    margin-left: 6px;
+  }
+
+  #contact #formSending p.strong span:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  #contact #formSending p.strong span:last-child {
+    animation-delay: 300ms;
+  }
+
+  @keyframes sending {
+    0 {
+      opacity: 0.1
+    }
+    50% {
+      opacity: 0.5
+    }
+    100% {
+      opacity: 1
+    }
+  }
 
 /*----------------------------Queries------------------------------*/
 

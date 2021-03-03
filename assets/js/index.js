@@ -138,3 +138,61 @@ lottie.loadAnimation({
   path: 'assets/json/data.json' // the path to the animation json
 });
 
+// ------------------------------Form-----------------------------
+
+function dataSubmited(data) {
+  const requestOptions = {
+    method: 'POST',
+    body: data,
+    headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+    },
+  };
+  fetch("https://www.infocasas.com.uy/proyectos/torre-firenze?&formulario=1&json=1", requestOptions)
+  .then((json) => {
+    setTimeout(()=>{
+      if (json.status === 200) {
+        $('#formSuccess').fadeIn();
+      } else {
+        $('#formError').fadeIn();
+      }
+      $('#formSending').hide();
+    }, 2000)
+  })
+  .catch(error => {
+    console.log('error', error);
+    setTimeout(() => {
+      $('#formSending').hide();
+      $('#formError').fadeIn();
+    }, 100)
+  });
+}
+
+function submited() {
+  const form = document.querySelector('#contactForm')
+  const data = JSON.stringify({
+    nombre: form.name.value,
+    email: form.email.value,
+    telefono: form.phone.value,
+    extra: form.consult.value,
+  })
+  event.preventDefault()
+  if (!form.checkValidity()) {
+    event.stopPropagation()
+  }else{
+    // dataSubmited(data)
+    // setTimeout(()=>{
+    //   $(form).fadeOut();
+    //   $('#formSending').fadeIn();
+    // },300)
+    setTimeout(()=>{
+      $(form).fadeOut();
+      $('#formSending').fadeIn();
+      setTimeout(()=>{
+        $('#formSending').fadeOut();
+        $('#formSuccess').fadeIn();
+      },1000)
+    },1000)
+  }
+  form.classList.add('was-validated')
+}

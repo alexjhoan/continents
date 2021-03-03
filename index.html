@@ -388,7 +388,7 @@
       <div class="row">
         <div class="col-12 col-md-6 wow fadeInRight">
           <h2>Contactanos</h2>
-          <form id="contactForm validation">
+          <form id="contactForm" novalidate>
             <div class="form-floating">
               <input type="text" class="form-control" placeholder="Nombre" name="name" required>
               <label for="name">Nombre*</label>
@@ -407,8 +407,7 @@
             </div>
             <button class="btn btn-primary mt-3" type="submit" onclick="submited()">Enviar</button>
           </form>
-
-          <div id="formSending">
+          <div id="formSending" style="display: none;">
             <p class="h3 strong">
               Enviando
               <span></span>
@@ -422,8 +421,6 @@
           <div id="formError" style="display: none;">
             <p class="h3 strong">¡Error en el envio de su consulta.<br>Por favor intentar mas tarde!</p>
           </div>
-
-
         </div>
         <div class="col-12 col-md-6 offset-lg-1 col-lg-5 red  wow fadeInLeft">
           <img src="assets/icons/continents-color.svg" alt="" class="logoHeader" />
