@@ -12,6 +12,11 @@ function bgNavBar() {
   }
 }
 
+function closeCollapse (){
+  $('.navbar-collapse.show').removeClass('show')
+}
+
+
 // ----------------------------------Projects----------------------------------
 
 function autoProgress(dateInit, dateEnd, IdProgress, IdImpPercentage) {
