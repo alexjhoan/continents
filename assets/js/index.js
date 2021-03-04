@@ -153,7 +153,7 @@ function dataSubmited(data) {
     'Content-type': 'application/json; charset=UTF-8',
     },
   };
-  fetch("https://www.infocasas.com.uy?mid=formulario&func=ajax_save", requestOptions)
+  fetch("https://www.infocasas.com.uy?mid=formulario&func=ajax_save&json=1", requestOptions)
   .then((json) => {
     setTimeout(()=>{
       if (json.status === 200) {
