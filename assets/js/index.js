@@ -1,3 +1,8 @@
+//window.scrollTo(0, 0);
+$(window).on('load', function () {
+  $('body').delay(200).css('opacity', '1');
+});
+
 new WOW({offset:200}).init()
 
 //---------------------------------bgNavBar----------------------------------

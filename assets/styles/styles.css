@@ -50,8 +50,13 @@ section {
   box-shadow: none!important;
 }
 
-body {
+html {
   overflow-x: hidden;
+}
+
+body {
+  opacity: 0;
+  transition: all linear .3s;
 }
 
 /*----------------------------header-------------------------------*/
@@ -143,6 +148,8 @@ body {
     background-repeat: no-repeat;
     background-size: 45%;
     background-attachment: fixed;
+    position: relative;
+    z-index: 2;
   }
 
   #banner .containerGrid .left img{
@@ -169,13 +176,14 @@ body {
     margin: 0 auto;
   }
 
-  #banner .dividerBanner {
+  #banner .right .dividerBanner {
     width: 75%;
     height: 5px;
     background: var(--primary);
     left: 0;
     position: absolute;
     top: -50px;
+    z-index: 1
   }
 
 /*------------------------------us---------------------------------*/
@@ -188,10 +196,6 @@ body {
     position: relative;
     padding: 30px 0;
   }
-
-  div#pruebawow {
-    padding-top: 0 !important;
-}
 
   #us .item:before{
     position: absolute;
@@ -284,7 +288,7 @@ p.h5.fw-bold.mb-5{
     text-align: right;
     margin-bottom: 50px;
     font-weight: 500;
-    margin-top: 78.94px;
+    margin-top: 30px;
   }
 
   section#us4 img.logoSections {
