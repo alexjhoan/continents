@@ -189,6 +189,10 @@ body {
     padding: 30px 0;
   }
 
+  div#pruebawow {
+    padding-top: 0 !important;
+}
+
   #us .item:before{
     position: absolute;
     content: "";
@@ -698,17 +702,23 @@ p.h5.fw-bold.mb-5{
   }
 
   @media (max-width: 991.98px) {
+
     header .navbar a.nav-link {
       margin-left: 10px;
     }
     #us .item:before {
       border-top: none;
     }
+     #us .item:hover:before {
+    transform: rotate(0);
+    height: 100%;
+  }
     section#us4 img.logoSections {
       position: absolute;
       left: 35%;
       top: 50%;
     }
+
     #us5 .containerGrid {
       display: block;
       width: 100%;
@@ -809,7 +819,7 @@ p.h5.fw-bold.mb-5{
       background: url('../images/header-left.jpg');
       background-repeat: no-repeat;
       background-size: cover;
-      height: 50vh;
+      height: 60vh;
     }
     #banner .containerGrid .right {
       padding: 100px 0 48px;
@@ -821,15 +831,37 @@ p.h5.fw-bold.mb-5{
     #banner .dividerBanner {
       top: -30px;
     }
+    p.h2.text-center.ff-roboto.text-white.mb-5.wow.fadeInRight {
+    margin-top: 62px;
+    }
+    #us2 .flags img {
+    width: 46px;
+    height: auto;
+    margin: 0 15px;
+    margin-bottom: 25px;
+    }
     section#us3 .divider {
       background: #50BAA3;
       width: 60%;
+    }
+    section#us3 {
+    overflow: hidden;
+    padding: 8vh 0;
+    }
+    p.h5.fw-bold.mb-5 {
+    margin-top: 0;
     }
     section#us3 .left{
       align-items: center;
     }
     section#us3 .left .h2{
       text-align: center;
+    }
+    section#us3 .left .h2 {
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 25px;
+
     }
     section#us3 .left{
       margin-bottom: 30px;
@@ -839,6 +871,7 @@ p.h5.fw-bold.mb-5{
     }
     section#us4 .left .h2{
       text-align: center;
+      margin-top: 0;
     }
     section#us4 .left .containerImgApto{
       position: relative;
@@ -847,13 +880,17 @@ p.h5.fw-bold.mb-5{
       margin-bottom: 30px;
     },
     section#us5 {
-      padding: 10vh 0 8vh;
+    padding: 8vh 2vh 8vh;
+    }
+    #us5 .containerGrid {
+    margin: 20px 0;
     }
     section#us5 .divider {
       width: 60%;
     }
     section#us5 .left .h2{
       text-align: center;
+      margin-top: 0;
     }
     section#advance .left .h2{
       text-align: center;
@@ -868,6 +905,18 @@ p.h5.fw-bold.mb-5{
     }
     #advance .btnMore{
       display: none;
+    }
+    section#projects {
+    padding: 2vh 0;
+    }
+    p.capture {
+    margin-top: 0;
+    }
+    section#backups {
+    padding: 4vh 0;
+    }
+    #backups .band {
+    margin: 0;
     }
   }
 
