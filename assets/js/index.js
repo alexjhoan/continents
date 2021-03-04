@@ -5,7 +5,7 @@ new WOW({offset:200}).init()
 function bgNavBar() {
   let container = $("#banner").height();
   let scroll = $(window).scrollTop();
-  if (scroll > 200 ) {
+  if (scroll > 150 ) {
     $(".bgheader").addClass("bgShow")
   } else {
     $(".bgheader").removeClass("bgShow")
@@ -40,10 +40,13 @@ function autoProgress(dateInit, dateEnd, IdProgress, IdImpPercentage) {
 if (screen.width > 768){
   $("#lightgallery").lightGallery();
   const items =  $('#lightgallery a').length;
-  let shown = screen.width < 992 ? 4 : 5
+  let shown = screen.width < 992 ? 8 : 10
+  let showItems = $('#lightgallery a:visible').length+shown;
   $('#lightgallery a:lt('+shown+')').show();
+  if(showItems >= items) {
+    $('.more').fadeOut(500);
+  }
   function seeMore() {
-    let showItems = $('#lightgallery a:visible').length+shown;
     $('#lightgallery a:lt('+showItems+')').fadeIn(1000);
     if(showItems >= items) {
       $('.more').fadeOut(500);

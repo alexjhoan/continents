@@ -7,7 +7,7 @@ function counterUp(container) {
         countNum: countTo
       },
       {
-        duration: 5000,
+        duration: 4000,
         easing:'easeOutExpo',
         step: function() {
           $this.text(Math.ceil(this.countNum));
@@ -17,7 +17,7 @@ function counterUp(container) {
         }
       });
     });
-  }, 1000)
+  }, 750)
 }
 
 $(window).on("scroll", function () {
