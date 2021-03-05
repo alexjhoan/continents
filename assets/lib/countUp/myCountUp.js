@@ -1,4 +1,5 @@
-function counterUp(container) {
+function counterUp(container, delay) {
+  const countDelay = delay || 250
   setTimeout(()=>{
     $(`${container} .counterUp`).each(function() {
     let $this = $(this),
@@ -7,7 +8,7 @@ function counterUp(container) {
         countNum: countTo
       },
       {
-        duration: 4000,
+        duration: 2000,
         easing:'easeOutExpo',
         step: function() {
           $this.text(Math.ceil(this.countNum));
@@ -17,7 +18,7 @@ function counterUp(container) {
         }
       });
     });
-  }, 750)
+  }, countDelay)
 }
 
 $(window).on("scroll", function () {
@@ -28,7 +29,7 @@ $(window).on("scroll", function () {
   if (scroll > ((heightTop1 - heightWindow) + 200) && (scroll < (heightTop1 + heightWindow))) {
     counterUp('#us')
   } else if (scroll > ((heightTop2 - heightWindow) * 1.15 ) && (scroll < (heightTop2 + heightWindow))) {
-    counterUp('#projects')
+    counterUp('#projects', 1250)
   }
 });
 

@@ -98,14 +98,14 @@ body {
   }
 
   header .navbar {
-    position: relative;
-    z-index: 12;
     height: 66px;
   }
 
   header .navbar a.nav-link{
     color: #fff!important;
     margin-left: 35px;
+    position: relative;
+    z-index: 12;
   }
 
   header button.navbar-toggler {
@@ -113,6 +113,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 12;
   }
 
   header button.navbar-toggler span {
@@ -437,7 +439,7 @@ p.h5.fw-bold.mb-5{
     font-size: 24px;
     text-align: center;
     margin: 0;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   #projects .sold p span:not(.counterUp) {

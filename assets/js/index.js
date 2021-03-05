@@ -1,4 +1,3 @@
-//window.scrollTo(0, 0);
 $(window).on('load', function () {
   $('body').delay(200).css('opacity', '1');
 });
@@ -111,14 +110,6 @@ $(document).ready(function(){
 })
 
 
-// ------------------------------controls-scroll----------------------------
-
-$(window).on("scroll", function () {
-  bgNavBar()
-  bannerParallax()
-  usParallax()
-});
-
 // --------------------------------Continents-------------------------------
 
 if (screen.width < 992) {
@@ -142,13 +133,37 @@ $('#us5 .owl-carousel').owlCarousel({
   }
 })
 
-// --------------------------------Continents-------------------------------
+// --------------------------------grafic-------------------------------
+
 lottie.loadAnimation({
-  container: graphic, // the dom element that will contain the animation
+  container: graphic,
   renderer: 'svg',
-  loop: true,
+  loop: false,
   autoplay: true,
-  path: 'assets/json/data.json' // the path to the animation json
+  path: 'assets/json/data.json',
+  name: "graphic"
+});
+
+function grafic() {
+  let container = $("#us3 .left")
+  let heightTop = container.offset().top;
+  let heightWindow = $(window).height();
+  let scroll = $(window).scrollTop()
+  if ((scroll > (heightTop - (heightWindow - 400))) && (scroll < (heightTop + heightWindow))) {
+    lottie.play("graphic")
+  } else {
+    lottie.stop("graphic")
+  }
+}
+
+
+// ------------------------------controls-scroll----------------------------
+
+$(window).on("scroll", function () {
+  bgNavBar()
+  bannerParallax()
+  usParallax()
+  grafic()
 });
 
 // ------------------------------Form-----------------------------
