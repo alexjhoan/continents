@@ -3,7 +3,7 @@ $(window).on('load', function () {
   $('body').delay(200).css('opacity', '1');
 });
 
-new WOW({offset:200}).init()
+new WOW({offset:200, scrollContainer: null}).init()
 
 //---------------------------------bgNavBar----------------------------------
 
