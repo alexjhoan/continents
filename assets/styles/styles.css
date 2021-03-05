@@ -582,6 +582,9 @@ p.h5.fw-bold.mb-5{
     grid-template-columns: 25% 25% 25% 25%;
     text-align: center;
   }
+  .backupsgrid img {
+    width: 75%;
+  }
 
 /*----------------------------contact------------------------------*/
 
