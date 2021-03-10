@@ -2,7 +2,15 @@ $(window).on('load', function () {
   $('body').delay(200).css('opacity', '1');
 });
 
-new WOW({offset:200, scrollContainer: null}).init()
+let offset
+
+if (screen.width > 768){
+  offset = 200
+} else {
+  offset = 0
+}
+
+new WOW({offset:offset, scrollContainer: null}).init()
 
 //---------------------------------bgNavBar----------------------------------
 
