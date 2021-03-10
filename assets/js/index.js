@@ -89,9 +89,15 @@ function bannerParallax() {
   let heightElem = container.height()
   let scroll = $(window).scrollTop()
   if (scroll >= 0 && scroll < heightElem) {
-    container.css({
-      "background-position": "0px " + -0.4 * scroll + "px"
-    })
+    if (screen.width > 768) {
+      container.css({
+        "background-position": "0px " + -0.4 * Math.floor(scroll) + "px"
+      })
+    } else {
+      container.css({
+        "background-position": "0px " + 0.4 * Math.floor(scroll) + "px"
+      })
+    }
   }
 }
 
@@ -232,7 +238,7 @@ function submited() {
 }
 
 // ------------------------------Contact mobil-----------------------------
-if ($(window).width() <= 992){
+if ($(window).width() < 992){
   $("#contact").find(".wow").removeClass("wow");
 }
 
