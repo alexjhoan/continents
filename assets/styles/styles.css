@@ -889,9 +889,9 @@ p.h5.fw-bold.mb-5{
       left: 0;
       width: 100%;
       margin-bottom: 30px;
-    },
+    }
     section#us5 {
-    padding: 8vh 2vh 8vh;
+    padding: 8vh 2vh 0vh;
     }
     #us5 .containerGrid {
     margin: 20px 0;
@@ -902,6 +902,9 @@ p.h5.fw-bold.mb-5{
     section#us5 .left .h2{
       text-align: center;
       margin-top: 0;
+    }
+    section#advance {
+    padding: 8vh 0 0vh;
     }
     section#advance .left .h2{
       text-align: center;
@@ -918,13 +921,13 @@ p.h5.fw-bold.mb-5{
       display: none;
     }
     section#projects {
-    padding: 2vh 0;
+    padding: 10vh 0;
     }
     p.capture {
     margin-top: 0;
     }
     section#backups {
-    padding: 4vh 0;
+    padding: 10vh 0;
     }
     #backups .band {
     margin: 0;
