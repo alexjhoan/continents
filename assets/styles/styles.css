@@ -785,6 +785,12 @@ p.h5.fw-bold.mb-5{
       width: 60%;
       top: 86px;
     }
+    #contact #formError p.strong {
+    padding-bottom: 20%;
+    }
+    #contact #formSuccess p.strong {
+    padding-bottom: 20%;
+    }
     #contact h2 {
       margin-top: 70px;
     }

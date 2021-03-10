@@ -230,3 +230,11 @@ function submited() {
   }
   form.classList.add('was-validated')
 }
+
+// ------------------------------Contact mobil-----------------------------
+if ($(window).width() <= 992){
+  $("#contact").find(".wow").removeClass("wow");
+}
+
+
+
